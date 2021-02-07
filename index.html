@@ -1,0 +1,30 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator_v.1.0</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="primeui/themes/bootstrap/theme.css" />
+    <link rel="stylesheet" href="primeui/product/primeui-1.0-min.css" />
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script type="text/javascript" src="primeui/product/primeui-1.0-min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <label for="txtExtrada"></label><input type="text" id="txtExtrada" value="((550-50)-(350-45))/(75-25)">
+        <span id="resultado"></span>
+        <button onclick="nuevoArbol();">Enviar</button>
+
+        <button onclick="recorerEnOrden()">Mostrar recorridos
+        </button>
+        <div id="tree">
+        </div>
+        <div id="messages"></div>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

@@ -10,7 +10,6 @@ $(document).ready(function () {
 
 function recorerEnOrden() {
 
-
     var log1 = [],
         log2 = [],
         log3 = [];
@@ -21,7 +20,6 @@ function recorerEnOrden() {
     Recorrido.postorden(actualesNodos, log2);
     console.info("POSTORDEN,", log2)
 
-
     Recorrido.inorden(actualesNodos, log3);
     console.info("INORDEN", log3)
 
@@ -29,6 +27,7 @@ function recorerEnOrden() {
 }
 
 function nuevoArbol() {
+
     var currentTimeMillis = new Date().getTime();
     var expresion = $('#txtExtrada').val();
     var nodos = Arbol.crear(expresion);
